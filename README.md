@@ -8,25 +8,28 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-In order to complete the installation, you will need the following:
-* Some stuff to install PostgreSQL or just run a script?
+None. We will be installing PostgreSQL and its dependencies 
 
 ## Installation
 
-### Raspberry Pi Setup
+### PostgreSQL Installation
 
-If the raspberry pi has not been imaged, use the following link to download and install NOOBS:
-* [Raspberry Pi OS Images](https://www.raspberrypi.org/documentation/installation/installing-images/)
-
-Follw the installation and onscreen instructions until you reach the home screen 
-
-Change the default password and enable SSH for remote work inside of raspi-config. Changing the password is in the main menu and SSH settings are inside *Interfacing Options* 
+Download and install the version of PostgreSQL 12 that corresponds with your operating system. For this, we will be accepting all default values.
+* [PostgreSQL Download](https://www.postgresql.org/download/)
+Validate your installation by running a basic SQL query inside the  PostgreSQL shell
+* Open the SQL shell (psql)
+* Select the default options 
+* Run the following command
 ```
-hopefully just kick off a script to install / setup the db
+SELECT version()
 ```
+
+### pgAdmin Installation (optional)
+Download and install the version of pgAdmin that corresponds with your operating system. This step is optional but it adds an easy to use GUI to the PostgreSQL server. For this, we will be accepting all default values. 
+* [pgAdmin 4 Download](https://www.pgadmin.org/download/)
+
 
 ## Troubleshooting 
-
 
 
 ## Built With
